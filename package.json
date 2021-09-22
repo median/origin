@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "i": "^0.3.7"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "deepcopy": "^2.1.0",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.0",
+    "request-promise-native": "^1.0.9",
+    "user-agents": "^1.0.782"
+  }
 }
