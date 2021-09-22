@@ -20,4 +20,4 @@ EA Origin platform username checker.
 
     "node index.js"
     
-    Enjoy!
+Enjoy!
