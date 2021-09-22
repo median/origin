@@ -5,13 +5,13 @@ const deepcopy = require('deepcopy');
 const fetch = require("node-fetch");
 const userAgents = new UserAgent();
 
-var list = fs.readFileSync("list.txt", "UTF-8").split(/\r?\n/);
-var webhookId = ``;
-var webhookToken = ``;
-var URL = `https://discordapp.com/api/webhooks/${webhookId}/${webhookToken}`;
-var headers = { "Content-Type": "application/json" };
+let list = fs.readFileSync("list.txt", "UTF-8").split(/\r?\n/);
+let webhookId = ``;
+let webhookToken = ``;
+let URL = `https://discordapp.com/api/webhooks/${webhookId}/${webhookToken}`;
+let headers = { "Content-Type": "application/json" };
 
-var base_webhook = {
+let base_webhook = {
     'embeds': [{
         'fields': [{
             'name': 'Origin Available:',
