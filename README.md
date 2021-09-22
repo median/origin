@@ -8,7 +8,7 @@ EA Origin platform username checker.
     "npm install user-agents"
     "npm install request-promise-native"
     "npm install fs"
-    "npm install node-fetch"
+    "npm install node-fetch@2.6.0"
     "npm install deepcopy"
 
 [?] Fill in your webhook details.
