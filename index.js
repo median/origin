@@ -1,9 +1,7 @@
-const UserAgent = require('user-agents');
 const request = require(`request-promise-native`);
 const fs = require('fs');
 const deepcopy = require('deepcopy');
 const fetch = require("node-fetch");
-const userAgents = new UserAgent();
 
 let list = fs.readFileSync("list.txt", "UTF-8").split(/\r?\n/);
 let webhookId = ``;
