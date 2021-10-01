@@ -3,13 +3,12 @@ const fs = require('fs');
 const deepcopy = require('deepcopy');
 const fetch = require("node-fetch");
 
-let list = fs.readFileSync("list.txt", "UTF-8").split(/\r?\n/);
-let webhookId = ``;
-let webhookToken = ``;
-let URL = `https://discordapp.com/api/webhooks/${webhookId}/${webhookToken}`;
-let headers = { "Content-Type": "application/json" };
+const list = fs.readFileSync("list.txt", "UTF-8").split(/\r?\n/);
+const webhookId = ``;
+const webhookToken = ``;
+const URL = `https://discordapp.com/api/webhooks/${webhookId}/${webhookToken}`;
 
-let base_webhook = {
+const base_webhook = {
     'embeds': [{
         'fields': [{
             'name': 'Origin Available:',
@@ -49,7 +48,7 @@ async function notify(username) {
         webhook['embeds'][0]['color'] = 5287281;
         webhook['embeds'][0]['fields'][0]['value'] = username;
 
-        fetch(URL, { method: 'post', headers: headers, body: JSON.stringify(webhook) });
+        fetch(URL, { method: 'post', headers: { "Content-Type": "application/json" }, body: JSON.stringify(webhook) });
     } catch (e) {
         console.log(e);
     }
