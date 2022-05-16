@@ -9,9 +9,6 @@ EA Origin platform username checker.
 
 [?] Fill in your Discord webhook details.
 
-    "var webhookId = ``;"
-    "var webhookToken = ``;"
-
 [?] Run the program.
 
     "node index.js"
